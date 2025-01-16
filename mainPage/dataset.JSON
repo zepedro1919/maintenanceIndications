@@ -1,7 +1,7 @@
 {
     "machines": {
         "Z-Serr03": {
-            "image": "../assets/fotosMaquinas/Z-Serr03.jpeg",
+            "image": "./assets/fotosMaquinas/Z-Serr03.jpeg",
             "Inspeção": {
             "periodicity": "Semanal",
             "procedures": [
@@ -9,19 +9,19 @@
                     "step": 1,
                     "title": "Desligar a máquina",
                     "description": "Assegure-se de que a máquina está desligada e desconectada da fonte de energia antes de iniciar qualquer inspeção.",
-                    "image": "../assets/Z-Serr03/desligarMaquina.webp"
+                    "image": "./assets/Z-Serr03/desligarMaquina.webp"
                 },
                 {
                     "step": 2,
                     "title": "Verificar integridade física da máquina",
                     "description": "Inspecionar visualmente a máquina em busca de danos, corrosão ou desgaste em componentes externos.",
-                    "image": "../assets/Z-Serr03/verificarIntegridadeFisica.webp"
+                    "image": "./assets/Z-Serr03/verificarIntegridadeFisica.webp"
                 },
                 {
                     "step": 3,
                     "title": "Limpeza externa",
                     "description": "Limpe a superfície da máquina para remover poeira, detritos e resíduos de material cortado.",
-                    "image": "../assets/Z-Serr03/limpezaSuperficie.webp"
+                    "image": "./assets/Z-Serr03/limpezaSuperficie.webp"
                 }
               ]
             },
@@ -32,25 +32,25 @@
                     "step": 1,
                     "title": "Identificar pontos de lubrificação",
                     "description": "Consulte o manual do fabricante ou utilize o conhecimento técnico para localizar os pontos que necessitam de lubrificação, como guias, eixos e engrenagens.",
-                    "image": "../assets/Z-Serr03/identificarPontosDeLubrificacao.webp"
+                    "image": "./assets/Z-Serr03/identificarPontosDeLubrificacao.webp"
                 },
                 {
                     "step": 2,
                     "title": "Selecionar o lubrificante adequado",
                     "description": "Utilize o tipo de lubrificante recomendado para a máquina em questão.",
-                    "image": "../assets/Z-Serr03/selecionarLubrificanteAdequado.webp"
+                    "image": "./assets/Z-Serr03/selecionarLubrificanteAdequado.webp"
                 },
                 {
                     "step": 3,
                     "title": "Aplicar o lubrificante",
                     "description": "Aplique a quantidade correta de lubrificante nos pontos identificados, evitando excessos que possam atrair poeira ou causar acúmulo.",
-                    "image": "/assets/Z-Serr03/aplicarLubrificante.webp"
+                    "image": "./assets/Z-Serr03/aplicarLubrificante.webp"
                 },
                 {
                     "step": 4,
                     "title": "Remover excesso de lubrificante",
                     "description": "Limpe qualquer excesso para prevenir acúmulo de sujeira.",
-                    "image": "../assets/Z-Serr03/removerExcessodeLubrificante.webp"
+                    "image": "./assets/Z-Serr03/removerExcessodeLubrificante.webp"
                 }
             ]
             },
@@ -65,7 +65,7 @@
             }
         },
         "Z-Serr02": {
-            "image": "../assets/fotosMaquinas/Z-Serr02.jpeg",
+            "image": "./assets/fotosMaquinas/Z-Serr02.jpeg",
             "Inspeção": {
             "periodicity": "Semanal",
             "procedures": [
@@ -73,19 +73,19 @@
                     "step": 1,
                     "title": "Desligar a máquina",
                     "description": "Assegure-se de que a máquina está desligada e desconectada da fonte de energia antes de iniciar qualquer inspeção.",
-                    "image": "../assets/Z-Serr03/desligarMaquina.webp"
+                    "image": "./assets/Z-Serr03/desligarMaquina.webp"
                 },
                 {
                     "step": 2,
                     "title": "Verificar integridade física da máquina",
                     "description": "Inspecionar visualmente a máquina em busca de danos, corrosão ou desgaste em componentes externos.",
-                    "image": "../assets/Z-Serr03/verificarIntegridadeFisica.webp"
+                    "image": "./assets/Z-Serr03/verificarIntegridadeFisica.webp"
                 },
                 {
                     "step": 3,
                     "title": "Limpeza externa",
                     "description": "Limpe a superfície da máquina para remover poeira, detritos e resíduos de material cortado.",
-                    "image": "../assets/Z-Serr03/limpezaSuperficie.webp"
+                    "image": "./assets/Z-Serr03/limpezaSuperficie.webp"
                 }
               ]
             },
@@ -96,25 +96,25 @@
                     "step": 1,
                     "title": "Identificar pontos de lubrificação",
                     "description": "Consulte o manual do fabricante ou utilize o conhecimento técnico para localizar os pontos que necessitam de lubrificação, como guias, eixos e engrenagens.",
-                    "image": "../assets/Z-Serr03/identificarPontosDeLubrificacao.webp"
+                    "image": "./assets/Z-Serr03/identificarPontosDeLubrificacao.webp"
                 },
                 {
                     "step": 2,
                     "title": "Selecionar o lubrificante adequado",
                     "description": "Utilize o tipo de lubrificante recomendado para a máquina em questão.",
-                    "image": "../assets/Z-Serr03/selecionarLubrificanteAdequado.webp"
+                    "image": "./assets/Z-Serr03/selecionarLubrificanteAdequado.webp"
                 },
                 {
                     "step": 3,
                     "title": "Aplicar o lubrificante",
                     "description": "Aplique a quantidade correta de lubrificante nos pontos identificados, evitando excessos que possam atrair poeira ou causar acúmulo.",
-                    "image": "/assets/Z-Serr03/aplicarLubrificante.webp"
+                    "image": "./assets/Z-Serr03/aplicarLubrificante.webp"
                 },
                 {
                     "step": 4,
                     "title": "Remover excesso de lubrificante",
                     "description": "Limpe qualquer excesso para prevenir acúmulo de sujeira.",
-                    "image": "../assets/Z-Serr03/removerExcessodeLubrificante.webp"
+                    "image": "./assets/Z-Serr03/removerExcessodeLubrificante.webp"
                 }
             ]
             },
