@@ -118,16 +118,30 @@ function checkUrlParameters() {
     }
 }
 
+// Update the URL dynamically when mahine or maintenance is selected
+function updateURL(machine, maintenance) {
+    const url = new URL(window.location.href);
+    url.searchParams.set('machine', machine);
+    url.searchParams.set('maintenance', maintenance);
+    window.history.replaceState(null, '', url);
+}
+
 // Event listeners for dropdown changes
 machineSelect.addEventListener('change', () => {
     const selectedMachine = machineSelect.value;
+
     populateMaintenanceDropdown(selectedMachine);
     displayMachineInfo(selectedMachine);
     displayMaintenanceInfo(selectedMachine, maintenanceSelect.value);
+
+    updateURL(selectedMachine, selectedMaintenance);
 });
 
 maintenanceSelect.addEventListener('change', () => {
     const selectedMachine = machineSelect.value;
     const selectedMaintenance = maintenanceSelect.value;
+
     displayMaintenanceInfo(selectedMachine, selectedMaintenance);
+
+    updateURL(selectedMachine, selectedMaintenance);
 });
