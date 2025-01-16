@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Procedimentos de Manutenção</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Procedimentos de Manutenção</h1>
+        <label for="machine-select">Escolha a máquina:</label>
+        <select id="machine-select">
+            <option value="">Selecione uma máquina</option>
+        </select>
+
+        <label for="maintenance-select">Escolha a manutenção:</label>
+        <select id="maintenance-select" disabled>
+            <option value="">Selecione uma manutenção</option>
+        </select>
+
+        <div id="info">
+            <h2 id="machine-name"></h2>
+            <img id="machine-image" src="" alt="Machine Image">
+            <p><strong>Manutenção Preventiva:</strong> <span id="maintenance-name"></span></p>
+            <p><strong>Periodicidade:</strong> <span id="maintenance-periodicity"></span></p>
+            <img>
+            <div id="procedures">
+                <h3>Procedimentos:</h3>
+                <div id="procedure-list"></div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
