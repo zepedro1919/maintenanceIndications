@@ -6,9 +6,11 @@ const maintenanceSelect = document.getElementById("maintenance-select");
 const machineName = document.getElementById("machine-name");
 const maintenanceName = document.getElementById("maintenance-name");
 const maintenancePeriodicity = document.getElementById("maintenance-periodicity");
-const maintenanceDescription = document.getElementById("maintenance-description");
 const machineImage = document.getElementById("machine-image");
+const responsibleImage = document.getElementById("responsible-image");
 const procedureList = document.getElementById("procedure-list");
+const personResponsible = document.getElementById("person-responsible");
+const machineState = document.getElementById("machine-state");
 
 // Fetch data from dataset.json
 fetch('dataset.json')
@@ -36,7 +38,7 @@ function populateMaintenanceDropdown(machine) {
     maintenanceSelect.disabled = !machine;
     if (machine && data.machines[machine]) {
         Object.keys(data.machines[machine]).forEach(maintenance => {
-            if (maintenance !== "image") {
+            if (maintenance !== "image" && maintenance !== "responsavel" && maintenance !== "responsible") {
                 const option = document.createElement("option");
                 option.value = maintenance;
                 option.textContent = maintenance;
@@ -47,13 +49,17 @@ function populateMaintenanceDropdown(machine) {
 }
 
 // Display machine image and maintenance details
-function displayMachineInfo(machine) {
+function displayMachineandResponsibleImage(machine) {
     const machineData = data.machines[machine];
-    if (machineData && machineData.image) {
+    if (machineData && machineData.image && machineData.responsavel) {
         machineImage.src = machineData.image;
         machineImage.style.display = "block";
+        responsibleImage.src = machineData.responsavel;
+        responsibleImage.style = "block";
+        personResponsible.textContent = machineData.responsible;
     } else {
         machineImage.style.display = "none";
+        responsibleImage.style.display = "none";
     }
 }
 
@@ -63,6 +69,11 @@ function displayMaintenanceInfo(machine, maintenance) {
     if (maintenanceData) {
         maintenanceName.textContent = maintenance;
         maintenancePeriodicity.textContent = maintenanceData.periodicity;
+        if (Array.isArray(maintenanceData.machineState)) {
+            machineState.innerHTML = maintenanceData.machineState.join("<br>"); // Adds each string as a separate paragraph
+        } else {
+            machineState.innerHTML = maintenanceData.machineState;
+        }
 
         // Clear previous procedures
         procedureList.innerHTML = "";
@@ -77,14 +88,22 @@ function displayMaintenanceInfo(machine, maintenance) {
                 procedureTitle.textContent = `Passo ${procedure.step}: ${procedure.title}`;
                 procedureItem.appendChild(procedureTitle);
 
-                const procedureDescription = document.createElement("p");
-                procedureDescription.textContent = procedure.description;
-                procedureItem.appendChild(procedureDescription);
+                if (Array.isArray(procedure.description)) {
+                    procedure.description.forEach(text => {
+                        const paragraph = document.createElement("p");
+                        paragraph.innerHTML = text; // Adds each string as a separate paragraph
+                        procedureItem.appendChild(paragraph);
+                    });
+                } else {
+                    const procedureDescription = document.createElement("p");
+                    procedureDescription.innerHTML = procedure.description;
+                    procedureItem.appendChild(procedureDescription);
+                }
 
                 const procedureImage = document.createElement("img");
                 procedureImage.src = procedure.image;
                 procedureImage.alt = procedure.title;
-                procedureImage.style.width = "300px";
+                procedureImage.style.width = "400px";
                 procedureImage.style.marginTop = "10px";
                 procedureItem.appendChild(procedureImage);
 
@@ -95,7 +114,6 @@ function displayMaintenanceInfo(machine, maintenance) {
         machineName.textContent = '';
         maintenanceName.textContent = '';
         maintenancePeriodicity.textContent = '';
-        maintenanceDescription.textContent = '';
         procedureList.innerHTML = '';
     }
 }
@@ -109,7 +127,7 @@ function checkUrlParameters() {
     if (initialMachine) {
         machineSelect.value = initialMachine;
         populateMaintenanceDropdown(initialMachine);
-        displayMachineInfo(initialMachine);
+        displayMachineandResponsibleImage(initialMachine);
 
         if (initialMaintenance) {
             maintenanceSelect.value = initialMaintenance;
@@ -131,7 +149,7 @@ machineSelect.addEventListener('change', () => {
     const selectedMachine = machineSelect.value;
 
     populateMaintenanceDropdown(selectedMachine);
-    displayMachineInfo(selectedMachine);
+    displayMachineandResponsibleImage(selectedMachine);
     displayMaintenanceInfo(selectedMachine, maintenanceSelect.value);
 
     updateURL(selectedMachine, selectedMaintenance);

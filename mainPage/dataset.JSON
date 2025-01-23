@@ -148,6 +148,351 @@
         },
         "Z-Balnc3": {
 
+        },
+        "M-CNC301": {
+            "image": "./assets/fotosMaquinas/M-CNC301.jpeg",
+            "responsavel": "./assets/fotosColaboradores/Manuel_Sergio.jpeg",
+            "responsible": "Manuel Sérgio",
+            "Limpeza": {
+                "periodicity": "A cada 1 hora",
+                "machineState": [
+                    "- Máquina ligada com interruptor geral na posição 'I' (ON);",
+                    "- seccionador pneumático na posição 'ON';",
+                    "- botão de emergência liberado."
+                ],
+                "procedures": [
+                    {
+                        "step": 1,
+                        "title": "Limpeza dos planos",
+                        "description": [
+                            "Manter os planos sempre limpos, onde são posicionados os dispositivos de bloqueio (ventosas, prensadores, etc.), de modo a permitir o seu funcionamento normal.",
+                            "Remover todos os resíduos de rebarbas ou pós utilizando um aspirador adequado e panos limpos, usando as proteções individuais oportunas."
+                        ],
+                        "image": "./assets/M-CNC301/limpeza_dos_planos.jpeg"
+                    },
+                    {
+                        "step": 2,
+                        "title": "Limpeza das guias de escorrimento",
+                        "description": [
+                            "Manter sempre limpas as guias de escorrimento do plano.",
+                            "Remover todos os resíduos de rebarbas ou pós utilizando um aspirador adequado e panos limpos, usando as proteções individuais oportunas."
+                        ],
+                        "image": "./assets/M-CNC301/limpeza_das_guias_escorrimento.jpeg"
+                    }
+                ]
+            },
+            "Limpeza geral da máquina": {
+                "periodicity": "A cada 4 horas",
+                "machineState": [
+                    "- Máquina desligada com interruptor geral na posição '--' (OFF);",
+                    "- seccionador pneumático na posição 'OFF';",
+                    "- botão de emergência pressionado."
+                ],
+                "procedures": [
+                    {
+                        "step": 1,
+                        "title": "Desativar a máquina",
+                        "description": [
+                            "Antes de iniciar a operação de limpeza, de modo a evitar quais quer possibilidades de ativação por parte de qualquer pessoa, fica aos cuidados do opearador interromper a alimentação de energia elétrica por meio do interruptor geral colocado no quadro elétrico. Além de interromper também a alimentação da energia pneumática por meio da válvula de exclusão.",
+                            "<b>Cada operação de manutenção, limpeza ou reparação efetuada com a instalação elétrica sob tensão, pode causar graves acidentes com pessoas, até mesmo mortais.</b>"
+                        ],
+                        "image": ""
+                    },
+                    {
+                        "step": 2,
+                        "title": "Limpeza geral e deteção de anomalias",
+                        "description": [
+                            "É tarefa do operador efetuar uma limpeza geral da máquina e eliminar todas as rebarbas de processamento.",
+                            "É obrigatório, quando se efetuar a limpeza da máquina, ter uma ferramenta carregada no eletromandril.",
+                            "A limpeza da máquina deverá ser efetuada utilizando um aspirador adequado e panos limpos.",
+                            "É tarefa do operador verificar se não há perdas de vários tipos e controlar o estado de integridade das tubulações flexíveis e de outros órgãos sujeitos a desgaste.",
+                            "Se o operador encontrar anomalias (partes desgastadas ou danificadas), é obrigatório avisar o pessoal da manutenção e é <b>proibido</b> reativar a máquina antes que tenha sido resolvido o problema.",
+                            "É obrigatório que, em caso de anomalia, o operador pare o ciclo produtivo da máquina, e coloque uma placa de paragem para manutenção (presente no comércio com as formas definidas pelas normas internacionais).",
+                            "As operações de limpeza devem ser realizadas usando óculos, máscara de proteção e luvas antinfortúnio.",
+                            "A eliminação de eventuais fluidos esgotados prevê a stockagem em invólucros próprios e a sucessiva conferência junto a empresas especializadas no setor, de acordo com as normas vigentes.",
+                            "É absolutamente proibido empregar jatos de água para a limpeza da máquina."
+                        ],
+                        "image": ""
+                    }
+                ]
+            },
+            "Limpeza profunda da máquina e manutenção": {
+                "periodicity": "A cada 8 horas",
+                "machineState": [
+                    "- Máquina desligada com interruptor geral na posição '--' (OFF);",
+                    "- seccionador pneumático na posição 'OFF';",
+                    "- botão de emergência pressionado."
+                ],
+                "procedures": [
+                    {
+                        "step":1,
+                        "title": "Limpeza do depósito sob trave",
+                        "description": [
+                            "Para permitir um bom estado de conservação e funcionamento do depósito sob trave carregamento ferramentas aconselha-se uma operação adequada de limpeza.",
+                            "O acesso ao depósito é permitido a partir da parte posterior da máquina, através do respetivo portão.",
+                            "Remover todos os resíduos de rebarbas ou pós utilizando um aspirador adequado e panos limpos, usando as proteções individuais oportunas.",
+                            "A limpeza deve ser feita só e exclusivamente na parte superior (ver imagem abaixo) do depósito evitando, desta maneira, o contacto com as ferramentas.",
+                            "<b>Prestar atenção nas ferramentas, pontas e lâminas que mesmo estando paradas podem provocar lacerações ou cortes.</b>",
+                            "No fim da limpeza, sair da área de trabalho verificando ter fechado corretamente o portão."
+                        ],
+                        "image": "./assets/M-CNC301/limpeza_do_deposito_sob_trave.jpeg"
+                    },
+                    {
+                        "step":2,
+                        "title": "Limpeza da bomba de vácuo",
+                        "description": [
+                            "A operação de manutenção e limpeza da bomba de vácuo (ver imagem) deve ser efetuada com a bomba parada, assegurando-se que não se possa verificar uma ativação acidental.",
+                            "Para ulteriores informações relativas à limpeza da válvula equilibradora, limpeza do flange de aspiração e limpeza do anteparo ventilador, <b>tomar como referência o manual de instruções de instalação e de serviço da bomba de vácuo anexado à parte.</b>"
+                        ],
+                        "image": "./assets/M-CNC301/limpeza_da_bomba_de_vacuo.jpeg"
+                    },
+                    {
+                        "step":3,
+                        "title": "Limpeza electromandril e verificação funcionamento",
+                        "description": [
+                            "Antes de proceder com a limpeza do electromandril (imagem abaixo), eliminar eventuais ferramentas presentes no mesmo.",
+                            "Para efectuar a limpeza do electromandril, proceder como indicado a seguir:",
+                            "a) Posicionar a unidade móvel, de modo a permitir a limpeza do electromandril, usando o programa Genesis Evolution, fazendo avançar a unidade móvel da máquina (eixo Y) na direção do operador na modalidade JOG, mantendo pressionada a tecla '-'.",
+                            "b) Desligar a máquina colocando o interruptor geral na posição 'O' (OFF), colocando o seccionador pneumático na posição OFF e pressionando o botão de emergência.",
+                            "Para a limpeza do electromandril dever-se-á utilizar um aspirador adequado conforme a quantidade de rebarbas a ser aspirada.",
+                            "<b>É severamente proibido o uso do ar sob pressão</b>.",
+                            "Limpar com cuidado a sede do cone com um pano limpo"
+                        ],
+                        "image": "./assets/M-CNC301/limpeza_electromandril.jpeg"
+                    },
+                    {
+                        "step":4,
+                        "title": "Limpeza dos cones",
+                        "description": [
+                            "Antes de proceder com a limpeza dos cones, desmontar as eventuais ferramentas presentes. Para a limpeza dos cones (ver imagem abaixo) usar um aspirador adequado ou panos limpos, isto para poder ter sempre uma eficiência perfeita.",
+                            "A operação de limpeza deverá ser efetuada antes de cada turno de trabalho.",
+                            "É severamente proibido o uso de qualquer tipo de solvente ou similar durante a fase de limpeza."
+                        ],
+                        "image": "./assets/M-CNC301/limpeza_dos_cones.jpeg"
+                    },
+                    {
+                        "step":5,
+                        "title": "Limpeza da cremalheira do eixo x",
+                        "description": [
+                            "Para permitir um bom estado de conservação da cremalheira (ver imagem abaixo) aconselha-se providenciar a remoção de todos os resíduos de rebarbas ou pós mediante um aspirador adequado após a jornada de trabalho, após ter desligado a máquina e a linha de alimentação mediante o interruptor geral."
+                        ],
+                        "image": "./assets/M-CNC301/Limpeza_da_cremalheira_do_eixo_x.jpeg"
+                    },
+                    {
+                        "step":6,
+                        "title": "Manutenção do grupo filtro-regulador",
+                        "description": [
+                            "A instalação pneumática de que a máquina é dotada é composta por um grupo de tratamento de ar com filtro e separador de condensação; a pressão da instalação pneumática deve ser regulada em 6 bars.",
+                            "Na instalação pneumática é previsto o controlo da presença do lubrificante semanalmente. Este é mantido num tanque transparente colocado sobre o grupo.",
+                            "Se o tanque se encher, o operador deverá providenciar a descarga manual da condensação agindo no parafuso (ver imagem abaixo) colocando no fundo do tanque; quando tiver providenciado a descarga deve recolocar o parafuso de retenção."
+                        ],
+                        "image": "./assets/M-CNC301/manutencao_do_grupo_filtro_regulador.jpeg"
+                    }
+                ]
+            },
+            "Lubrificação": {
+                "periodicity": "A cada 15 horas",
+                "machineState": [
+                    "- Máquina desligada com interruptor geral na posição '--' (OFF);",
+                    "- seccionador pneumático na posição 'OFF';",
+                    "- botão de emergência pressionado."
+                ],
+                "procedures": [
+                    {
+                        "step": 1,
+                        "title": "Lubrificação centralizada automática dos patins, parafusos de recirculação de esferas e unidade de trabalho",
+                        "description": [
+                            "O programa prevê um contador software, em que configurar o tempo de pausa, que vai sinalizar a necessidade de lubrificar a máquina (ver passos 2 e 3).",
+                            "A lubrificação é efetuada mediante a bomba manual fornecida (fig. 5.6.1.a/Ponto 1), com lubrificante tipo CASTROL SPHEEROL EPL0.",
+                            "a) Desligar a máquina;",
+                            "b) Encher a bomba manual de massa lubrificante;",
+                            "c) Inserir a massa lubrificante bombeando com a alavanca de accionamento da bomba tomando como referência os deslocamentos lineares da haste de controlo (Fig. 5.6.1.b/Ponto 1) até 7 cilos completos (entrada-saída da haste), deste modo o lubrificante terá alcançado todos os pontos a serem lubrificados na quantidade adequada.  O número dos ciclos é um valor aconselhado sujeito a variações com base nas tipologias de trabalho que são efetuados e no tempo de atividade efetiva da máquina.",
+                            "A máquina é fornecida pré-lubrificada com massa lubrificante de tipo CASTROL SPHEEROL EPL0."
+                        ],
+                        "image": "./assets/M-CNC301/lubrificacao_centralizada_automatica_dos_patins.png"
+                    },
+                    {
+                        "step": 2,
+                        "title": "Lubrificação automática",
+                        "description": [
+                            "A gestão da lubrificação prevê uma página em 'Paramétrica tecnológica' na secção de 'Configuração Eixos' para as configurações da lubrificação (ver fig. 5.6.2.a):",
+                            "<b>Os valores que aparecem no display são aqueles aconselhados pela Busellato S.p.A., mas podem e devem ser modificados pelo utilizador com base nas próprias exigências.</b>",
+                            "<b>'Habilita Lubrificação Automática':</b>",
+                            "checkbox para habilitar a lubrificação automática.",
+                            "<b>'Periodicidade de lubrificação automática [horas]':</b>",
+                            "indica o tempo aconselhado em horas entre um ciclo de bombeamento automático e o sucessivo."
+                        ],
+                        "image": "./assets/M-CNC301/lubrificacao_automatica.jpeg"
+                    },
+                    {
+                        "step": 3,
+                        "title": "Modalidade automática",
+                        "description": [
+                            "O tempo de pausa é calculado somente com a máquina em funcionamento para processamentos. Ao ligar a máquina considera-se útil o tempo de pausa lubrificação precedentemente acumulado. Em caso de emergência ocorrida durante a operação de bombeamento, esta última é bloqueada e reactivada ao se rearmar a emergência.",
+                            "Se for constatado que o nível do lubrificante está no mínimo, é feita uma sinalização no vídeo: 'Atenção: nível lubrificante no mínimo'.",
+                            "Ao desaparecer do sinal de nível mínimo todas as sinalizações são canceladas.",
+                            "Se for detetado em tempo útil o sinal de pressão é feita uma sinalização no vídeo e é interrompida a bomba de lubrificação: 'Atenção: controlar a bmoba ou tubos para a lubrificação'.",
+                            "A sinalização é repetida para todas as tentativas sucessivas de lubrificação se o problema voltar a aparecer.",
+                            "É prevista a possibilidade de ativar um ciclo de lubrificação por meio da respetiva tecla no sinóptico 'Máquina' (Fig. 5.6.2.b/Ponto 1)",
+                            "Esta operação de lubrificação prevê o anulamento do tempo de pausa precedentemente acumulado.",
+                            "Através da respetiva tecla (Fig. 5.6.2.b/Ponto 2) é possível fazer desaparecer a mensagem 'Atenção: efetuar lubrificação manual cabeça a perfurar' que aparece automaticamente a cada 200 horas de funcionamento da cabeça.",
+                            "O ciclo de lubrificação em automático não pode ser efetuado contemporaneamente em programas ou diagnósticos em andamento. Neste caso, a lubrificação fica suspensa aguardando o fim da execução. Após ter iniciado o ciclo é preciso aguardar que este termine antes de fazer outras operações."
+                        ],
+                        "image": "./assets/M-CNC301/modalidade_automatica.jpeg"
+                    }
+                ]
+            },
+            "Instalação elétrica": {
+                "periodicity": "A cada 24 horas",
+                "machineState": [
+                    "- Máquina desligada com interruptor geral na posição '--' (OFF);",
+                    "- seccionador pneumático na posição 'OFF';",
+                    "- botão de emergência pressionado."
+                ],
+                "procedures": [
+                    {
+                        "step": 1,
+                        "title": "Limpeza e controlo da instalação elétrica",
+                        "description": [
+                            "A limpeza e controlo da instalação elétrica limita-se exclusivamente a pequenas operações:",
+                            "a) verificação do estado dos componentes e dos cabos, enquanto desgastes por arrastamento ou manobras acidentais podem ter comprometido a eficiência das partes isolantes.",
+                            "b) Limpeza dos filtros das tomadas de ar dos armários elétricos; só quando estes estiverem limpos está garantido um fluxo de ar suficiente para manter uma temperatura aceitável para os componenetes contidos (esta operação deve ser efetuada mais frequentemente quando o ambiente onde a máquina opera for particularmente empoeirado).",
+                            "",
+                            "Os filtros a serem limpos são cinco e encontram-se respetivamente:",
+                            "-  na base do quadro elétrico (fig. 5.5.a/ponto 1) cujo acesso é permitido através de extração do painel do quadro elétrico, agindo nos dois respetivos parafusos;",
+                            "-  posteriormente ao quadro elétrico (fig. 5.5.b/ponto 1) cujo acesso é permitido agindo nos dois parafusos de fixação do cárter superior e extraindo, sucessivamente, o próprio cárter;",
+                            "-  na base da máquina (fig. 5.5.c/ponto 1) nas proximidades do grupo filtro-regulador."
+                        ],
+                        "image": "./assets/M-CNC301/instalacao_eletrica.jpeg"
+                    },
+                    {
+                        "step": 2,
+                        "title": "Limpeza e controlo da instalação elétrica",
+                        "description": [
+                            "Proceder tirando a grade dos filtros usando a ponta de uma chave de fendas como alavanca entre a garde dos filtros e a estrutura da máquina (ex. fig. 5.5.a/ponto 2). Extrair os filtros de ar, presentes nas grades, limpá-los a seco ou lavá-los em água morna com detergente neutro.",
+                            "Reposicionar os filtros limpos e secos nos erspetivos lugares e fixar novamente as grades exercendo uma leve pressão, de modo a permitir o encaixe na estrutura do quadro elétrico.",
+                            "Fixar firmemente na máquina o painel e o cárter precedentemente retirados, usando todos os respetivos parafusos.",
+                            "c) Controlo anual  do aperto de todos os bornes elétricos com parafuso; obviamente esta operação deve ser efetuada na falta de tensão. De facto se os bornes que apertam os cabos afrouxassem as vibrações poderiam causar contactos falsos, gerando uma série de disfunções difíceis a serem identificadas."
+                        ],
+                        "image": ""
+                    }
+                ]
+            },
+            "Remoção de resíduos": {
+                "periodicity": "Uma vez por mês",
+                "machineState": [
+                    "- Máquina desligada com interruptor geral na posição '--' (OFF);",
+                    "- seccionador pneumático na posição 'OFF';",
+                    "- botão de emergência pressionado."
+                ],
+                "procedures": [
+                    {
+                        "step": 1,
+                        "title": "Remoção de eventuais resíduos de massa lubrificante",
+                        "description": [
+                            "Uma operação a ser efetuada mensalmente é a de retirar todo o estrato de massa lubrificante das guias (fig.5.7./ponto 1) e dos parafusos de recirculação de esferas (fig.5.7/ponto 2), pois a exposição ao ar das partes lubrificadas causa a deposição de pó e impurezas formando corpos mais ou menos espessos, que podem travar os movimentos dos órgãos mecânicos ou causar eventuais entraves dos mesmos. A massa lubrificante nas guias deve ser eliminada utilizando petróleo sem ácidos ou solvente mineral, limpar e secar cuidadosamente com um pano e então efetuar imediatamente um programa de lubrificação.",
+                            "Tomando estas medidas garante-se uma funcionalidade e escorrimento perfeitos dos órgãos de movimento.",
+                            "A massa lubrificante removida deve ser eliminada respeitando-se as normas antipoluição vigentes no país."
+                        ],
+                        "image": "./assets/M-CNC301/remocao_de_residuos.jpeg"
+                    }
+                ]
+            },
+            "Lubrificação da cabeça e da lâmina": {
+                "periodicity": "A cada 200 horas ou uma vez por mês",
+                "machineState": [
+                    "- Máquina desligada com interruptor geral na posição 'I' (ON);",
+                    "- seccionador pneumático na posição 'ON';",
+                    "- botão de emergência liberado."
+                ],
+                "procedures": [
+                    {
+                        "step": 1,
+                        "title": "Lubrificação da cabeça a ser perfurada e da lâmina integrada",
+                        "description": [
+                            "A lubrificação deve ser efectuada a cada 200 horas de serviço ou de qualquer forma uma vez por mês e com a cabeça ainda quente ou de qualquer forma após pelo menos 15 minutos de funcionamento.",
+                            "É efectuada mediante a bomba manual fornecida, e com a etiqueta colorida com a escrita do nome da massa lubrificante a ser utilizada, e com a junção conforme ao tipo de massa lubrificante instalada no corpo de alumínio (fig. 5.10.a).",
+                            "Antes de proceder com as operações de lubrificação aconselha-se usar luvas de trabalho apropriadas.",
+                            "",
+                            "<b>Aconselha-se usar massas lubrificantes novas e bem conservadas.</b>",
+                            "É de máxima importância inserir na cabeça só massa lubrificante limpa. O uso de lubrificantes sujos pode comprometer o bom funcionamento além do estado de conservação da unidade de trabalho.",
+                            "",
+                            "A cabeça é fornecida com massa lubrificante de tipo <b>MOBIL - MOBILTEMP SHC 100.</b>",
+                            "Para as operações de lubrificação usar o mesmo produto aconselhado pela Busellato S.p.A. atendo-se às respectivas normas para a manipulação. Em caso de dificuldade de reperibilidade usar só lubrificantes equivalentes.",
+                            "",
+                            "<b>Não misturar tipos de lubrificantes diferentes.</b>",
+                            "",
+                            "Se for preciso trocar o tipo de lubrificante, com um equivalente, é muito importante limpar cuidadosamente e completamente toda a cabeça e respectiva bomba, eliminando possíveis resíduos do produto anterior com a finalidade de não criar reacções químicas que possam modificar as características dos lubrificantes e portanto serem nocivas para a máquina.",
+                            "A massa lubrificante velha expurgada e removida deve ser eliminada respeitando-se as normativas anti-poluição vigentes.",
+                            "",
+                            "<b>Inactividade da máquina por períodos mais ou menos longos.</b>",
+                            "Recorda-se que se a máquina tivesse que ficar desactivada por períodos mais ou menos longos (mais de seis meses), é aconselhável efectuar um programa de lubrificação antes de activá-la.",
+                            "",
+                            "<b>A operação de lubrificação deve ser efectuada com a máquina em funcionamento com a instalação eléctrica sob tensão, portanto aconselha-se colocar no quadro de comandos uma placa que indique o estado de serviço para manutenção na máquina.</b>",
+                            "<b>Cada operação de manutenção, limpeza ou reparação efectuada com a máquina em funcionamento pode causar acidentes graves, até mesmo mortais, portanto devem ser efectuadas por pessoal qualificado.</b>",
+                            "",
+                            "Proceder, portanto com as seguintes operações:",
+                            "a) Posicionar o selector modal de estado máquina, colocado no painel de controlos do armário eléctrico na posição “automático”.",
+                            "b) Da janela principal de Genesis, habilitar a área de trabalho em “nível técnico de manutenção”.",
+                            "Com as teclas de escolha rápida CTRL+ * (sinal de multiplicação do teclado numérico) abre-se a janela que permite a introdução da respectiva senha. Digitar na respectiva janela a senha conhecida pelo pessoal encarregado da manutenção e confirmar com o botão INVIO.",
+                            "c) Abrir o sinóptico Main a partir da janela principal de Genesis (ver manual “guia para a programação rápida de Genesis”).",
+                            "d) Deslocar o carro eixo Y para a posição de curso máximo Y- (posição extrema na direcção da parte da frente do carro, lado operador).",
+                            "e) Pressionar o botão cogumelo de emergência.",
+                            "f) A massa lubrificante a ser utilizada é MOBIL - <b>MOBILTEMP SHC 100</b>.",
+                            "g) Encher de massa lubrificante a bomba manual tendo a mesma a escrita do lubrificante acima mencionado.",
+                            "h) Encaixar a bomba no lubrificador colocado no corpo de alumínio (ponto 1 fig. 5.10.a), para 3 + 4 bombeamentos com a alavanca de accionamento da bomba."
+                        ],
+                        "image": "./assets/M-CNC301/cabeca1.jpeg"
+                    },
+                    {
+                        "step": 2,
+                        "title": "Lubrificação da cabeça a ser perfurada e da lâmina integrada",
+                        "description": [
+                            "i) Desenganchar a bomba do lubrificador e sair dos tapetes de segurança.",
+                            "j) Proceder com a lubrificação da lâmina integrada.",
+                            "k) Encaixar a bomba no lubrificador (fig. 5.10.b/ponto 1) colocado no corpo da lâmina, bombear massa lubrificante até vê-lo sair do sopro.",
+                            "l) Controlar e eliminar eventuais oxidações na parte externa de deslizamento dos mandris e enfim aplicar spray lubrificante no Teflon.",
+                            "m) Fechar o sinóptico Main e desabilitar o nível de acesso “nível de técnico de manutenção” restaurando o nível de acesso “nível operador”.",
+                            "Para restaurar a máquina rodar o botão de emergência no sentido anti-horário e pressionar o botão de reset emergência do painel de controlos para reactivar a potência da máquina.",
+                            "Com as teclas de escolha rápida CTRL+ * (sinal de multiplicação do teclado numérico) abre-se a janela que permite a introdução da senha. Digitar na respectiva janela a senha do nível mínimo conhecida pelo pessoal encarregado da manutenção e pelo operador e confirmar com o botão INVIO.",
+                            "",
+                            "No fim das operações de lubrificação, antes de reactivar a máquina, o responsável pela manutenção deve se certificar de que o trabalho tenha sido concluído e de que o nível de acesso mínimo (nível do operador) tenha sido restaurado."
+                        ],
+                        "image": "./assets/M-CNC301/cabeca2.jpeg"
+                    }
+                ]
+            },
+            "Lubrificação da cremalheira": {
+                "periodicity": "A cada 960 horas ou a cada 6 meses",
+                "machineState": [
+                    "- Máquina desligada com interruptor geral na posição '--' (OFF);",
+                    "- seccionador pneumático na posição 'OFF';",
+                    "- botão de emergência pressionado."
+                ],
+                "procedures": [
+                    {
+                        "step": 1,
+                        "title": "Lubrificação da cremalheira do eixo X",
+                        "description": [
+                            "A lubrificação deve ser efetuada a cada 960 horas de serviço ou de qualquer maneira a cada 6 meses seguindo as seguintes operações:",
+                            "a) Limpar cuiaddosamente toda a cremalheira (fig. 5.11./ponto 1) cmo panos limpos, eliminando eventuais resíduos de massa lubrificante velha e contaminada por pós ou impurezas. Empregar se necessário petróleo sem ácidos ou solvente mineral ou também uma escova de bronze para eliminar os resíduos mais resistentes.",
+                            "b) Enxugar cuidadosamente com panos limpos ou ar comprimido.",
+                            "c) Lubrificar toda a cremalheira com um estrato fino de lubrificante de tipo D321 R MOLYKOTE (DOW-CORNING), usando um aspersor com spray.",
+                            "",
+                            "Antes de lubrificar aconselha-se cobrir a parte de estrutura da máquina presente em torno da cremalheira utilizando uma caixa ou um produto semelhante.",
+                            "Esta medida evita sujar de tinta a própria estrutura durante a borrifação do produto.",
+                            "Para permitir que o produto chegue a todos os pontos da cremalheira aconselha-se iniciar a lubrificação começando da direita para a esquerda e vice-versa dirigindo o fluxo de baixo para cima.",
+                            "",
+                            "d) Aguardar alguns minutos antes de movimentar os eixos.",
+                            "",
+                            "<b>Não empregar lubrificantes sujos.</b>",
+                            "Lubrificantes contaminados usados na máquina podem agir como um abrasivo das partes em contacto e portanto pode comprometer o funcionamento normal da máquina.",
+                            "No caso de inatividade da máquina por periodos mais ou menos longos recorda-se que é necessário providenciar um programa de limpeza e lubrificação antes da ativação."
+                        ],
+                        "image": "./assets/M-CNC301/lubrificacao_da_cremalheira.jpeg"
+                    }
+                ]
+            }
         }
     }
 }
